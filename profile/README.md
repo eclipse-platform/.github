@@ -11,3 +11,9 @@ See also https://projects.eclipse.org/projects/eclipse.platform and https://ecli
 ## Reporting issues
 
 The Eclipse Platform project is split into multiple Git repositories owned by this organization. If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that repository. If you're unsure, you can open an issue against this repository and the issue will then be moved as best by maintainers.
+
+## Contributing
+
+[Contributions are always welcome!](https://github.com/eclipse-platform/.github/blob/main/CONTRIBUTING.md)
+
+Please bear in mind that this project is almost entirely developed by volunteers. If you do not provide the implementation yourself (or pay someone to do it for you), the bug might never get fixed. If it is a serious bug, other people than you might care enough to provide a fix.
