@@ -90,6 +90,10 @@ Contributor Agreement (ECA) on file.
 For more information, please see the Eclipse Committer Handbook:
 https://www.eclipse.org/projects/handbook/#resources-commit
 
+## Setting up development environment
+
+See https://wiki.eclipse.org/Platform/How_to_Contribute
+
 ## Contact
 
 Contact the project developers via the project's "dev" list.
