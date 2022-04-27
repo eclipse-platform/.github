@@ -1,6 +1,9 @@
 # Eclipse Platform™
 
 ![splash](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform/master/platform/org.eclipse.platform/splash.png)
+<br>
+[Pull requests](https://github.com/pulls?user=eclipse-platform) |
+[Issues](https://github.com/issues?user=eclipse-platform)
 
 Eclipse Platform defines the set of frameworks and common services that collectively make up infrastructure required to support the use of Eclipse as a component model, as a Rich Client Platform (RCP) and as a comprehensive tool integration platform. These services and frameworks include a standard workbench user interface model and portable native widget toolkit, a project model for managing resources, automatic resource delta management for incremental compilers and builders, language-independent debug infrastructure, and infrastructure for distributed multi-user versioned resource management.
 
