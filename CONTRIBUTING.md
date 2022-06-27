@@ -43,14 +43,19 @@ contributions are always welcome!
 
 ### Setting up your GitHub account
 
-To verify the Eclipse Contributor License Agreement, GitHub contributions must use the 
-same mail address like your [Eclipse.org account](https://accounts.eclipse.org/).
+All contributors, who are not committers on this Eclipse project,
+must electronically sign the [Eclipse Contributor Agreement (ECA)](https://www.eclipse.org/legal/ECA.php)
+via their [Eclipse account](https://accounts.eclipse.org/).
+For more information, please see the [Eclipse Committer Handbook](https://www.eclipse.org/projects/handbook/#contributing).
+
+To verify the Eclipse Contributor Agreement, GitHub contributions must use the 
+same email address like your [Eclipse account](https://accounts.eclipse.org/).
 If your GitHub account was registered with a different address, you can [add your Eclipse
 email address to the account](https://github.com/settings/emails) instead.
 
 Also add your GitHub account name to your [Eclipse account](https://accounts.eclipse.org/) under social media links section
 to enable automated management of access rights for Eclipse project members.
-If you are a committer in any of the Eclipse projects, you should receive a mail containing an invite to join 
+If you are a committer in any of the Eclipse projects, you should receive a email containing an invite to join 
 that project's GitHub organisation within 2 hours. You should accept the invite 
 to maintain committer status in the GitHub organisation.
 
@@ -95,20 +100,6 @@ Commit message recommendations
   
   Again this is a recommendation on the issue title part. Instead of issue title, if needed provide a concise description of changes. 
   Please do not forget to add the issue number to the commit message. This is used to link with GitHub issue.
-  
-
-## Eclipse Contributor Agreement
-
-Before your contribution can be accepted by the project team every contributor must
-electronically sign the [Eclipse Contributor Agreement (ECA)](https://www.eclipse.org/legal/ECA.php).
-
-Commits that are provided by non-committers must have a Signed-off-by field in
-the footer indicating that the author is aware of the terms by which the
-contribution has been provided to the project. The non-committer must
-additionally have an Eclipse Foundation account and must have a signed Eclipse
-Contributor Agreement (ECA) on file.
-
-For more information, please see the [Eclipse Committer Handbook](https://www.eclipse.org/projects/handbook/#resources-commit).
 
 ## Setting up development environment
 
