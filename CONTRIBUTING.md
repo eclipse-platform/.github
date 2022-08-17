@@ -28,11 +28,8 @@ The project issues and source code are maintained in [multiple GitHub repositori
 * https://github.com/eclipse-platform/eclipse.platform.debug
 * https://github.com/eclipse-platform/eclipse.platform.releng
 * https://github.com/eclipse-platform/eclipse.platform.releng.aggregator
-* https://github.com/eclipse-platform/eclipse.platform.resources
-* https://github.com/eclipse-platform/eclipse.platform.runtime
 * https://github.com/eclipse-platform/eclipse.platform.swt
 * https://github.com/eclipse-platform/eclipse.platform.swt.binaries
-* https://github.com/eclipse-platform/eclipse.platform.team
 * https://github.com/eclipse-platform/eclipse.platform.text
 * https://github.com/eclipse-platform/eclipse.platform.ua
 * https://github.com/eclipse-platform/eclipse.platform.ui.tools
