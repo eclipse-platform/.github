@@ -89,7 +89,7 @@ Here are the steps:
   * Squash and Merge (all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits)
 15. After the PR is merged the source branch used for the PR can be deleted. 
 
-Commit message recommendations
+### Commit message recommendations
 
   \<issue title\> \#\<issue number\>
   
