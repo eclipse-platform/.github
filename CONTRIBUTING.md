@@ -81,7 +81,7 @@ Here are the steps:
 8. Open the forked repository page in your browser, switch to the branch where the fix is developed. Click the _Contribute_ button to start the _Open Pull Request_ workflow.
 9. On the new page verify the target branch is the correct one to merge your commits. Also verify the list of commits contains the changes you intend to merge. If every thing OK, please click on _Create pull request_ button at the bottom right.
 10. You can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
-11. If you push more commits to the same branch in your fork, they automatically get added the pull request (and trigger a new round of builds and reviews).
+11. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews).
 12. Reviewers can review the pull request on the GitHub website or fetch the PR using the menu _Fetch GitHub PR_ in egit.
 13. Every PR is automatically verified to check that contributors have a valid Eclipse Contributor Agreement.
 14. Once the PR is approved there are two options to merge. Select what fits best given these criteria:
