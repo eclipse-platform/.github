@@ -5,7 +5,13 @@
 [Pull requests](https://github.com/pulls?user=eclipse-platform) |
 [Issues](https://github.com/issues?user=eclipse-platform)
 
-Eclipse Platform defines the set of frameworks and common services that collectively make up infrastructure required to support the use of Eclipse as a component model, as a Rich Client Platform (RCP) and as a comprehensive tool integration platform. These services and frameworks include a standard workbench user interface model and portable native widget toolkit, a project model for managing resources, automatic resource delta management for incremental compilers and builders, language-independent debug infrastructure, and infrastructure for distributed multi-user versioned resource management.
+Eclipse Platform is a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure. It serves as the base framework for the Eclipse integrated development environment (IDE) and many other rich client applications.
+
+The platform includes a wide range of frameworks and common services that are essential to supporting the use of Eclipse as a component model. These services include a standard workbench user interface model and a portable native widget toolkit, which ensure that the user interface of Eclipse is consistent across different platforms. The project model allows for the management of resources and enables automatic resource delta management for incremental compilers and builders.
+
+Eclipse Platform also provides a language-independent debug infrastructure that enables developers to debug programs written in different languages. Additionally, the platform includes infrastructure for distributed multi-user versioned resource management, which allows for collaborative development and version control of resources.
+
+Overall, Eclipse Platform is an essential set of tools and services for developers who need a robust and flexible platform for building complex software applications. Its comprehensive set of frameworks and common services ensure that developers can create high-quality software that meets the needs of their users. As the base framework for the Eclipse IDE and many other rich client applications, Eclipse Platform has a proven track record of providing a stable and reliable development platform that supports the creation of powerful software applications.
 
 It is the base framework for the [Eclipse IDE](https://www.eclipse.org/eclipseide/) and many other applications.
 
