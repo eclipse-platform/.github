@@ -27,3 +27,8 @@ e.g.
 [Contributions are always welcome!](https://github.com/eclipse-platform/.github/blob/main/CONTRIBUTING.md)
 
 Please bear in mind that this project is almost entirely developed by volunteers. If you do not provide the implementation yourself (or pay someone to do it for you), the bug might never get fixed. If it is a serious bug, other people than you might care enough to provide a fix.
+
+## Code of Conduct
+🤝 This project is governed by the Eclipse Foundation [Code of Conduct](https://github.com/eclipse-platform/.github/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior to [conduct@eclipse-foundation.org](mailto:conduct@eclipse-foundation.org).
+
+
