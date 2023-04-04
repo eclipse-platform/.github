@@ -23,7 +23,9 @@ As you contribute more and more, you will eventually get nominated as a committe
 
 ### Reporting issues
 
-The Eclipse Platform project is split into multiple [repositories](https://github.com/orgs/eclipse-platform/repositories) owned by this organization. If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that repository. If you are unsure, you can open an [issue](https://github.com/eclipse-platform/.github/issues) against this repository and the issue will then be moved as best by maintainers.
+Before reporting an issue, please consider testing the latest build of Eclipse Platform or SDK. [This page](https://download.eclipse.org/eclipse/downloads/) lists latest builds, and links to downloadable product archives and p2 repositories; and if you're using Maven artifacts, snapshots of Eclipse project are available at https://repo.eclipse.org/content/repositories/eclipse-snapshots/ .
+
+The Eclipse Platform project codebase is split into multiple [repositories](https://github.com/orgs/eclipse-platform/repositories) owned by this organization. If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that particular repository. If you are unsure, you can open an [issue](https://github.com/eclipse-platform/.github/issues) against this current repository and the issue will then be moved as best by maintainers.
 
 For errors please provide Stacktrace or [minimal reproducer](https://stackoverflow.com/help/minimal-reproducible-example).
 
