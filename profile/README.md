@@ -5,9 +5,13 @@
 [Pull requests](https://github.com/pulls?user=eclipse-platform) |
 [Issues](https://github.com/issues?user=eclipse-platform)
 
-Eclipse Platform defines the set of frameworks and common services that collectively make up infrastructure required to support the use of Eclipse as a component model, as a Rich Client Platform (RCP) and as a comprehensive tool integration platform. These services and frameworks include a standard workbench user interface model and portable native widget toolkit, a project model for managing resources, automatic resource delta management for incremental compilers and builders, language-independent debug infrastructure, and infrastructure for distributed multi-user versioned resource management.
+Eclipse Platform is a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure. It serves as the base framework for the [Eclipse integrated development environment IDE](https://www.eclipse.org/eclipseide/) and many other rich client applications.
 
-It is the base framework for the [Eclipse IDE](https://www.eclipse.org/eclipseide/) and many other applications.
+The platform includes a wide range of frameworks and common services that are essential to supporting the use of Eclipse as a component model. These services include a standard workbench user interface model and a portable native widget toolkit, which ensure that the user interface of Eclipse is consistent across different platforms. The project model allows for the management of resources and enables automatic resource delta management for incremental compilers and builders.
+
+Eclipse Platform also provides a language-independent debug infrastructure that enables developers to debug programs written in different languages. Additionally, the platform includes infrastructure for distributed multi-user versioned resource management, which allows for collaborative development and version control of resources.
+
+Overall, Eclipse Platform is an essential set of tools and services for developers who need a robust and flexible platform for building complex software applications. Its comprehensive set of frameworks and common services ensure that developers can create high-quality software that meets the needs of their users. As the base framework for the Eclipse IDE and many other rich client applications, Eclipse Platform has a proven track record of providing a stable and reliable development platform that supports the creation of powerful software applications.
 
 ![workbench](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.common/master/bundles/org.eclipse.platform.doc.isv/guide/images/workbench.png)
 
@@ -25,7 +29,11 @@ As you contribute more and more, you will eventually get nominated as a committe
 
 Before reporting an issue, please consider testing the latest build of Eclipse Platform or SDK. [This page](https://download.eclipse.org/eclipse/downloads/) lists latest builds, and links to downloadable product archives and p2 repositories; and if you're using Maven artifacts, snapshots of Eclipse project are available at https://repo.eclipse.org/content/repositories/eclipse-snapshots/ .
 
-The Eclipse Platform project codebase is split into multiple [repositories](https://github.com/orgs/eclipse-platform/repositories) owned by this organization. If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that particular repository. If you are unsure, you can open an [issue](https://github.com/eclipse-platform/.github/issues) against this current repository and the issue will then be moved as best by maintainers.
+The Eclipse Platform project codebase is split into multiple [repositories](https://github.com/orgs/eclipse-platform/repositories) owned by this organization. If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that particular repository, e.g.
+* [New SWT issue](https://github.com/eclipse-platform/eclipse.platform.swt/issues/new)
+* [New Platform issue](https://github.com/eclipse-platform/eclipse.platform.ui/issues/new)
+
+If you are unsure, you can open an [issue](https://github.com/eclipse-platform/.github/issues) against this current repository and the issue will then be moved as best by maintainers.
 
 For errors please provide Stacktrace or [minimal reproducer](https://stackoverflow.com/help/minimal-reproducible-example).
 
@@ -36,3 +44,5 @@ For performance issues attach sampling snapshot (for example with [visualvm](htt
 Contributions are always welcome!
 See [CONTRIBUTING.md](https://github.com/eclipse-platform/.github/blob/main/CONTRIBUTING.md)
 
+## Code of Conduct
+🤝 This project is governed by the Eclipse Foundation [Code of Conduct](https://github.com/eclipse-platform/.github/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report any unacceptable behavior to [conduct@eclipse-foundation.org](mailto:conduct@eclipse-foundation.org).
