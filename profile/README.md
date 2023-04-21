@@ -27,7 +27,9 @@ As you contribute more and more, you will eventually get nominated as a committe
 
 ### Reporting issues
 
-Before reporting an issue, please consider testing the latest build of Eclipse Platform or SDK. [This page](https://download.eclipse.org/eclipse/downloads/) lists latest builds, and links to downloadable product archives and p2 repositories; and if you're using Maven artifacts, snapshots of Eclipse project are available at https://repo.eclipse.org/content/repositories/eclipse-snapshots/ .
+Before reporting an issue, please consider whether the issue still exists or as already been reported:
+* Find existing issues: https://github.com/issues?user=eclipse-platform
+* Test the latest build of Eclipse Platform or SDK: [This page](https://download.eclipse.org/eclipse/downloads/) lists latest builds, and links to downloadable product archives and p2 repositories; and if you're using Maven artifacts, snapshots of Eclipse project are available at https://repo.eclipse.org/content/repositories/eclipse-snapshots/ .
 
 The Eclipse Platform project codebase is split into multiple [repositories](https://github.com/orgs/eclipse-platform/repositories) owned by this organization. If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that particular repository, e.g.
 * [New SWT issue](https://github.com/eclipse-platform/eclipse.platform.swt/issues/new)
