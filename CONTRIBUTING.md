@@ -71,23 +71,52 @@ The recommended way for contributions is to create a fork of the main project re
 
 Here are the steps:
 
-1. Use the _Fork_ button (top right) on the GitHub repository page to create a forked repository under your GitHub account.
-2. Click _Fetch upstream_ to get the latest source code from the upstream repository.
-3. Clone the forked repository to your Eclipse workspace. The repository URL can be found by clicking the _Code_ button on the top right of the _<> Code_ tab.
-4. Create a local branch.
-5. Change code as needed to fix the issue.
-6. Commit code changes to the local branch. Make multiple commits if necessary as history can be retained.
-7. Once the fix is ready, push the branch to your forked repository (not to the original upstream project repository).
-8. Open the forked repository page in your browser, switch to the branch where the fix is developed. Click the _Contribute_ button to start the _Open Pull Request_ workflow.
-9. On the new page verify the target branch is the correct one to merge your commits. Also verify the list of commits contains the changes you intend to merge. If every thing OK, please click on _Create pull request_ button at the bottom right.
-10. You can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
-11. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews).
-12. Reviewers can review the pull request on the GitHub website or fetch the PR using the menu _Fetch GitHub PR_ in egit.
-13. Every PR is automatically verified to check that contributors have a valid Eclipse Contributor Agreement.
-14. Once the PR is approved there are two options to merge. Select what fits best given these criteria:
+1. Use the _Fork_ button (top right) on the GitHub repository page and choose _Create a new fork_ to create a forked repository under your GitHub account.
+
+2. Click _Sync fork_ to get the latest source code from the  main project repository .
+
+3. Clone the forked repository to your Eclipse workspace. The repository URL can be found by clicking the _<> Code_ button on the top right of the _<> Code_ tab. When you cloned your fork, that should have automatically set your fork as the "origin" remote.
+
+4. Add the main project repository as an additional remote called "upstream".
+* Go to your fork on GitHub, and click the "forked from" link to return to the project repository. 
+* While in the main project repository, click the _<> Code_ button on the top right of the _<> Code_ tab copy the URL 
+* Add the URL as the "upstream" remote to your local clone.
+
+5. Create a local branch.
+
+6. Change code as needed to fix the issue.
+
+7. Commit code changes to the local branch. Make multiple commits if necessary as history can be retained.
+
+8. Once the fix is ready, push the branch to your forked repository (not to the original upstream project repository).
+
+9. Open the forked repository page in your browser, switch to the branch where the fix is developed. Click the _Contribute_ button to start the _Open Pull Request_ workflow.
+
+10. On the new page verify the target branch is the correct one to merge your commits. Also verify the list of commits contains the changes you intend to merge. If every thing OK, please click on _Create pull request_ button at the bottom right.
+
+11. You can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
+
+12. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews).
+
+13. Reviewers can review the pull request on the GitHub website or fetch the PR using the menu _Fetch GitHub PR_ in egit.
+
+14. Every PR is automatically verified to check that contributors have a valid Eclipse Contributor Agreement.
+
+15. Once the PR is approved there are two options to merge. Select what fits best given these criteria:
   * Rebase and Merge (retains all commits separately; useful when developing a feature consisting of multiple independent commits)
   * Squash and Merge (all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits)
-15. After the PR is merged the source branch used for the PR can be deleted. 
+
+16. After the PR is merged the source branch used for the PR can be deleted. 
+
+17. Your fork is now _is out-of-date_ with the main (upstream) project repository. To get it back up to date via git, you should:
+* Pull the latest changes from "upstream" (the project repository) into your local repository. 
+* Push those changes from your local repository to the "origin" (your fork)
+  
+  If you return to your fork on GitHub, you will see that the master branch is _up-to-date_ with the main project repository.
+  
+  You can also get your fork back up-to-date via the GitHub repository page of your fork. Click the _Sync fork_ drop down menu and choose the _Update branch_ button.
+
+18. Your fork is now ready for your next contribution. 
 
 ### Commit message recommendations
 
