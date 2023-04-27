@@ -38,7 +38,10 @@ The project issues and source code are maintained in [multiple GitHub repositori
 Be sure to search for existing issues before you create another one. Remember that
 contributions are always welcome!
 
-### Setting up your GitHub account
+### Setting up your Eclipse and GitHub account
+
+Create an [Eclipse account](https://accounts.eclipse.org/) if you don't already have one. 
+See the ["Eclipse Foundation Account" section](https://www.eclipse.org/projects/handbook/#contributing-account) in the Eclipse Commiter Handbook.
 
 All contributors, who are not committers on this Eclipse project,
 must electronically sign the [Eclipse Contributor Agreement (ECA)](https://www.eclipse.org/legal/ECA.php)
@@ -50,11 +53,11 @@ same email address like your [Eclipse account](https://accounts.eclipse.org/).
 If your GitHub account was registered with a different address, you can [add your Eclipse
 email address to the account](https://github.com/settings/emails) instead.
 
-Also add your GitHub account name to your [Eclipse account](https://accounts.eclipse.org/) under social media links section
-to enable automated management of access rights for Eclipse project members.
-If you are a committer in any of the Eclipse projects, you should receive a email containing an invite to join 
-that project's GitHub organisation within 2 hours. You should accept the invite 
-to maintain committer status in the GitHub organisation.
+Also add your GitHub account name to your [Eclipse account](https://accounts.eclipse.org/) to enable automated management of access rights for Eclipse project members. 
+You can do this by logging into your Eclipse account, choosing ["Edit Profile"](https://accounts.eclipse.org/user/edit) and add your GitHub account name in the social media links section.
+
+If you are a committer in any of the Eclipse projects, you should receive an email containing an invite to join 
+that project's GitHub organisation within 2 hours. You should accept the invite to maintain committer status in the GitHub organisation.
 
 It is also recommended to [add SSH public keys to your GitHub account](https://github.com/settings/keys).
 
