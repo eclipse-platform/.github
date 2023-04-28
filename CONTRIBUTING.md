@@ -41,7 +41,7 @@ contributions are always welcome!
 ### Setting up your Eclipse and GitHub account
 
 Create an [Eclipse account](https://accounts.eclipse.org/) if you don't already have one. 
-See the ["Eclipse Foundation Account" section](https://www.eclipse.org/projects/handbook/#contributing-account) in the Eclipse Commiter Handbook.
+See the ["Eclipse Foundation Account" section](https://www.eclipse.org/projects/handbook/#contributing-account) in the Eclipse Committer Handbook.
 
 All contributors, who are not committers on this Eclipse project,
 must electronically sign the [Eclipse Contributor Agreement (ECA)](https://www.eclipse.org/legal/ECA.php)
