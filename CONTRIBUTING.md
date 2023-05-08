@@ -123,12 +123,29 @@ Here are the steps:
 
 ### Commit message recommendations
 
-  \<issue title\> \#\<issue number\>
+```
+<issue title> #<issue number>
+
+Short description/summary as to why this change is being made
   
-  Example: The eclipse-test-framework deliverable contains unsigned bundles \#32
-  
+Fixes httts://github.com/Full URL to issues/issue #
+```
+ 
+  Example: 
+
+```
+Make memory view cell editor visible on Linux GTK3 #132
+
+Since SWT change from GTK2 to GTK3 as its backend the cell
+editing in the memory view has not worked properly
+with the cell editor not visible. This change uses explicit
+setVisible rather than adjusting Z-order of the controls.
+
+Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132 
+```
+
   Again this is a recommendation on the issue title part. Instead of issue title, if needed provide a concise description of changes. 
-  Please do not forget to add the issue number to the commit message. This is used to link with GitHub issue.
+  Please do not forget to add the issue URL to the commit message. This is used to link with GitHub issue.
 
 ## Setting up development environment
 
