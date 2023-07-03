@@ -2,7 +2,7 @@
 
 Thanks for your interest in this project.
 
-## Project description
+## Project Description
 
 Eclipse Platform defines the set of frameworks and common services that
 collectively make up infrastructure required to support the use of Eclipse as a
@@ -15,7 +15,7 @@ infrastructure for distributed multi-user versioned resource management.
 
 * https://projects.eclipse.org/projects/eclipse.platform
 
-## Developer resources
+## Developer Resources
 
 Information regarding source code management, builds, coding standards, and
 more.
@@ -24,21 +24,18 @@ more.
 
 The project issues and source code are maintained in [multiple GitHub repositories](https://github.com/orgs/eclipse-platform/repositories) like
 * https://github.com/eclipse-platform/eclipse.platform
-* https://github.com/eclipse-platform/eclipse.platform.common
-* https://github.com/eclipse-platform/eclipse.platform.debug
 * https://github.com/eclipse-platform/eclipse.platform.releng
 * https://github.com/eclipse-platform/eclipse.platform.releng.aggregator
 * https://github.com/eclipse-platform/eclipse.platform.swt
 * https://github.com/eclipse-platform/eclipse.platform.swt.binaries
-* https://github.com/eclipse-platform/eclipse.platform.text
-* https://github.com/eclipse-platform/eclipse.platform.ua
+* https://github.com/eclipse-platform/eclipse.platform.ui
 * https://github.com/eclipse-platform/eclipse.platform.ui.tools
 
 
 Be sure to search for existing issues before you create another one. Remember that
 contributions are always welcome!
 
-### Setting up your Eclipse and GitHub account
+## Setting up Your Eclipse and GitHub Account
 
 Create an [Eclipse account](https://accounts.eclipse.org/) if you don't already have one. 
 See the ["Eclipse Foundation Account" section](https://www.eclipse.org/projects/handbook/#contributing-account) in the Eclipse Committer Handbook.
@@ -61,74 +58,105 @@ that project's GitHub organisation within 2 hours. You should accept the invite 
 
 It is also recommended to [add SSH public keys to your GitHub account](https://github.com/settings/keys).
 
-### Create an Eclipse Development Environment
+## Creating an Eclipse Development Environment
 
 You can set up a pre-configured IDE for development of the Eclipse SDK using the following link.
 
 [![Create Eclipse Development Environment for the Eclipse SDK](https://download.eclipse.org/oomph/www/setups/svg/Platform_SDK.svg)](https://www.eclipse.org/setups/installer/?url=https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/oomph/PlatformSDKConfiguration.setup&show=true "Click to open Eclipse-Installer Auto Launch or drag onto your running installer's title area")
 
-### Recommended workflow
+## Recommended Workflow
 
 The recommended way for contributions is to create a fork of the main project repository and to create changes only in that fork
 (see [Fork and pull model](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models#fork-and-pull-model) in the GitHub documentation).
+Then you can create a pull request (PR) to have your changes merged from the fork into the main project repository.
 
-Here are the steps:
+The workflow can be separated into two parts:
+1. [Creating and managing a fork](#creating-and-managing-a-fork)
+2. [Creating a PR](#creating-a-pull-request) from the fork and specifics of that process in the `eclipse-platform` organization
 
-1. Use the _Fork_ button (top right) on the GitHub repository page and choose _Create a new fork_ to create a forked repository under your GitHub account.
+If you are familiar with how to create and manage a fork, you can [skip that part](#creating-a-pull-request).
 
-2. Click _Sync fork_ to get the latest source code from the  main project repository .
+### Creating and Managing a Fork
 
-3. Clone the forked repository to your Eclipse workspace. The repository URL can be found by clicking the _<> Code_ button on the top right of the _<> Code_ tab. When you cloned your fork, that should have automatically set your fork as the "origin" remote.
+Use the _Fork_ button (top right) on the GitHub repository page and choose _Create a new fork_ to create a forked repository under your GitHub account.
+Whenever changes are pushed to the main project repository, you can click _Sync fork_ in the forked repository to get the latest source code from the main project repository.
 
-4. Add the main project repository as an additional remote called "upstream".
-* Go to your fork on GitHub, and click the "forked from" link to return to the project repository. 
-* While in the main project repository, click the _<> Code_ button on the top right of the _<> Code_ tab copy the URL 
-* Add the URL as the "upstream" remote to your local clone.
+Then you have two options:
 
-5. Create a local branch.
+1. Clone the main project repository and add the forked repository as an additional remote
+   
+   _With this option, you can easily retrieve the most recent changes from the main project repository by simply pulling the `master` branch, as your default remote repository will be the main project repository._
 
-6. Change code as needed to fix the issue.
+   Clone the main repository to your Eclipse workspace or, if you use the Eclipse installer as explained in [Creating an Eclipse Development Environment](#creating-an-eclipse-development-environment), the repository is already cloned that way. The repository URL can be found by clicking the _<> Code_ button on the top right of the _<> Code_ tab within the GitHub page for the main project repository. When you clone the repository, it will automatically be the added as the "origin" remote to your local clone.
 
-7. Commit code changes to the local branch. Make multiple commits if necessary as history can be retained.
+   You then have to add your fork as an additional remote to push your changes to a branch of that fork.
+   To this end, add the forked repository as an additional remote called "fork" (or whatever you like):
+   * Go to your fork on GitHub.
+   * Click the _<> Code_ button on the top right of the _<> Code_ tab copy the URL .
+   * Add the URL as the "fork" remote to your local clone.
 
-8. Once the fix is ready, push the branch to your forked repository (not to the original upstream project repository).
+   Whenever the `master` branch of the main project repository changes, pulling the `master` branch of your local clone will give you the current state. In case you have created a branch and committed changes to it, you can rebase it onto the updated `master` branch.
 
-9. Open the forked repository page in your browser, switch to the branch where the fix is developed. Click the _Contribute_ button to start the _Open Pull Request_ workflow.
+2. Clone the forked repository and add the main repository as an additional remote
 
-10. On the new page verify the target branch is the correct one to merge your commits. Also verify the list of commits contains the changes you intend to merge. If every thing OK, please click on _Create pull request_ button at the bottom right.
+   _With this option, you can easily create new branches for committed changes in your fork, as the default remote repository will be your forked repository._
 
-11. You can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
+   Clone the forked repository to your Eclipse workspace or, if you use the Eclipse installer as explained in [Creating an Eclipse Development Environment](#creating-an-eclipse-development-environment), you have to change the URL for the repository during the setup. The repository URL can be found by clicking the _<> Code_ button on the top right of the _<> Code_ tab within the GitHub page for the forked repository. When you clone the forked repository, it will automatically be added as the "origin" remote to your local clone.
 
-12. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews).
+   You then have to add the main project repository as an additional remote.
+   To this end, add the main project repository as an additional remote called "upstream":
+   * Go to the main project repository on GitHub.
+   * Click the _<> Code_ button on the top right of the _<> Code_ tab copy the URL.
+   * Add the URL as the "upstream" remote to your local clone.
 
-13. Reviewers can review the pull request on the GitHub website or fetch the PR using the menu _Fetch GitHub PR_ in egit.
+   Whenever the `master` branch of the main project repository changes, you have to synchronize the `master` branch of your fork. Go to the GitHub page of your forked repository and click _Sync fork_. You can then pull the `master` branch of your local clone to retrieve the current state. In case you have created a branch and committed changes to it, you can rebase it onto the updated `master` branch.
 
-14. Every PR is automatically verified to check that contributors have a valid Eclipse Contributor Agreement.
 
-15. Once the PR is approved there are two options to merge. Select what fits best given these criteria:
-  * Rebase and Merge (retains all commits separately; useful when developing a feature consisting of multiple independent commits)
-  * Squash and Merge (all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits)
+### Creating a Pull Request
 
-16. After the PR is merged the source branch used for the PR can be deleted. 
+When you have set up your fork of a repository that you want to contribute change to, and if you have prepared a local clone for it, it you can perform changes, commit them, and propose them via a pull request as follows.
 
-17. Your fork is now _is out-of-date_ with the main (upstream) project repository. To get it back up to date via git, you should:
-* Pull the latest changes from "upstream" (the project repository) into your local repository. 
-* Push those changes from your local repository to the "origin" (your fork)
-  
-  If you return to your fork on GitHub, you will see that the master branch is _up-to-date_ with the main project repository.
-  
-  You can also get your fork back up-to-date via the GitHub repository page of your fork. Click the _Sync fork_ drop down menu and choose the _Update branch_ button.
+1. Create a branch for the changes you want to make. Set up that branch starting from your local `master` branch and set the remote to your forked repository.
+
+2. Change code as needed to fix the issue.
+
+3. Commit code changes to the local branch of your fork. Make multiple commits if necessary as history can be retained, but note that you will usually be asked to combine your changes to a single commit per pull request. So keep changes as small as possible and try to split them up.
+
+4. Once the fix is ready, push the branch to your forked repository (not to the original upstream project repository).
+
+5. Open the forked repository page in your browser, switch to the branch where the fix is developed. Click the _Contribute_ button to start the _Open Pull Request_ workflow.
+
+6. On the new page verify the target branch is the correct one to merge your commits. It should be the `master` branch of the main project repository. Also verify that the list of commits contains the changes you intend to merge. If everything is fine, click on _Create pull request_ button at the bottom right.
+
+7. If you are a committer, you can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
+
+8. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews). You can also amend your previous commits and force push them to your branch. Note that you will usually be asked to squash your commits to a single one before a PR will be merged.
+
+9. Reviewers can review the pull request on the GitHub website or fetch the PR using the menu _Fetch GitHub PR_ in egit.
+
+10. Every PR is automatically verified to check that contributors have a valid Eclipse Contributor Agreement (ECA).
+
+11. Once the PR is approved, it can be merged by a committer. Select what fits best given these criteria:
+    * Rebase and Merge (retains all commits separately; useful when developing a feature consisting of multiple independent commits)
+    * Squash and Merge (all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits)
+
+12. After the PR is merged, the source branch used for the PR can be deleted. 
+
+13. Your fork is now _out-of-date_ with the main (upstream) project repository. In case the "origin" remote of your local clone is the forked repository, you should get it back up to date. You can either use the _Sync Fork_ function on GitHub to update the fork and pull the `master` branch to your local clone, or you can update the fork via git locally:
+    * Pull the latest changes from "upstream" (the main project repository) into your local repository. 
+    * Push those changes from your local repository to the "origin" (your fork).
+    If you return to your fork on GitHub, you will see that the master branch is _up-to-date_ with the main project repository.
 
 18. Your fork is now ready for your next contribution. 
 
-### Commit message recommendations
+## Commit Message Recommendations
 
 ```
 <issue title> #<issue number>
 
 Short description/summary as to why this change is being made
   
-Fixes httts://github.com/Full URL to issues/issue #
+Fixes https://github.com/<Full URL to issues/issue #>
 ```
  
   Example: 
@@ -146,10 +174,6 @@ Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132
 
   Again this is a recommendation on the issue title part. Instead of issue title, if needed provide a concise description of changes. 
   Please do not forget to add the issue URL to the commit message. This is used to link with GitHub issue.
-
-## Setting up development environment
-
-See https://wiki.eclipse.org/Platform/How_to_Contribute
 
 ## Contact
 
