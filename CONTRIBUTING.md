@@ -132,7 +132,7 @@ When you have set up your fork of a repository that you want to contribute chang
 
 8. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews). You can also amend your previous commits and force push them to your branch. Note that you will usually be asked to squash your commits to a single one before a PR will be merged.
 
-9. Reviewers can review the pull request on the GitHub website or fetch the PR using the menu _Fetch GitHub PR_ in egit.
+9. Reviewers can review the pull request on the GitHub website or fetch the PR using the _Fetch GitHub PR_ menu entry in the _Git Repositories_ view inside the Eclipse IDE.
 
 10. Every PR is automatically verified to check that contributors have a valid Eclipse Contributor Agreement (ECA).
 
