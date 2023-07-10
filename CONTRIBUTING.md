@@ -29,7 +29,6 @@ The project issues and source code are maintained in [multiple GitHub repositori
 * https://github.com/eclipse-platform/eclipse.platform.swt
 * https://github.com/eclipse-platform/eclipse.platform.swt.binaries
 * https://github.com/eclipse-platform/eclipse.platform.ui
-* https://github.com/eclipse-platform/eclipse.platform.ui.tools
 
 
 Be sure to search for existing issues before you create another one. Remember that
