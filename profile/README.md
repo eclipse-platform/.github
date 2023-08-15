@@ -13,7 +13,7 @@ Eclipse Platform also provides a language-independent debug infrastructure that 
 
 Overall, Eclipse Platform is an essential set of tools and services for developers who need a robust and flexible platform for building complex software applications. Its comprehensive set of frameworks and common services ensure that developers can create high-quality software that meets the needs of their users. As the base framework for the Eclipse IDE and many other rich client applications, Eclipse Platform has a proven track record of providing a stable and reliable development platform that supports the creation of powerful software applications.
 
-![workbench](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.common/master/bundles/org.eclipse.platform.doc.isv/guide/images/workbench.png)
+![workbench](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/eclipse.platform.common/bundles/org.eclipse.platform.doc.isv/guide/images/workbench.png)
 
 See also https://projects.eclipse.org/projects/eclipse.platform and https://eclipse.org/eclipse
 
