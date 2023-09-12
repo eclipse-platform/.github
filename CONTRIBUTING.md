@@ -129,7 +129,9 @@ When you have set up your fork of a repository that you want to contribute chang
 
 7. If you are a committer, you can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
 
-8. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews). You can also amend your previous commits and force push them to your branch. Note that you will usually be asked to squash your commits to a single one before a PR will be merged.
+8. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews). You can also amend your previous commits and force push them to your branch.
+    * Note that you will usually be asked to squash your commits to a single one before a PR will be merged (there is one possible exception to this, read further).
+    * Also note that when you bump versions in the Manifest/POM files, you could provide 2 separate commits in the same PR: one with the functional changes (_i.e._ in the code) and one with the version bump (_i.e._ in the Manifest/POM files). This is not a rule but, if necessary, it would help cherry-picking commits when merging your PR.
 
 9. Reviewers can review the pull request on the GitHub website or fetch the PR using the _Fetch GitHub PR_ menu entry in the _Git Repositories_ view inside the Eclipse IDE.
 
