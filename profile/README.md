@@ -33,7 +33,8 @@ Before reporting an issue, please consider whether the issue still exists or as 
 
 The Eclipse Platform project codebase is split into multiple [repositories](https://github.com/orgs/eclipse-platform/repositories) owned by this organization. If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that particular repository, e.g.
 * [New SWT issue](https://github.com/eclipse-platform/eclipse.platform.swt/issues/new)
-* [New Platform issue](https://github.com/eclipse-platform/eclipse.platform.ui/issues/new)
+* [New Platform issue](https://github.com/eclipse-platform/eclipse.platform/issues/new)
+* [New Platform UI issue](https://github.com/eclipse-platform/eclipse.platform.ui/issues/new)
 
 If you are unsure, you can open an [issue](https://github.com/eclipse-platform/.github/issues) against this current repository and the issue will then be moved as best by maintainers.
 
