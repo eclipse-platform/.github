@@ -4,10 +4,9 @@ Thanks for your interest in this project.
 
 ## Project Description
 
-Eclipse Platform defines the set of frameworks and common services that
-collectively make up infrastructure required to support the use of Eclipse as a
-component model, as a Rich Client Platform (RCP) and as a comprehensive tool
-integration platform. These services and frameworks include a standard workbench
+Eclipse Platform defines the set of frameworks and common services that supports the usage of Eclipse as a component model, 
+as a Rich Client Platform (RCP) and as a comprehensive tool integration platform. 
+These services and frameworks include a standard workbench
 user interface model and portable native widget toolkit, a project model for
 managing resources, automatic resource delta management for incremental
 compilers and builders, language-independent debug infrastructure, and
@@ -31,12 +30,12 @@ The project issues and source code are maintained in [multiple GitHub repositori
 * https://github.com/eclipse-platform/eclipse.platform.ui
 
 
-Be sure to search for existing issues before you create another one. Remember that
-contributions are always welcome!
+Be sure to search for existing issues before you create another one. 
+Remember that contributions are always welcome!
 
 ## Setting up Your Eclipse and GitHub Account
 
-Create an [Eclipse account](https://accounts.eclipse.org/) if you don't already have one. 
+Create an [Eclipse account](https://accounts.eclipse.org/), if you don't already have one. 
 See the ["Eclipse Foundation Account" section](https://www.eclipse.org/projects/handbook/#contributing-account) in the Eclipse Committer Handbook.
 
 All contributors, who are not committers on this Eclipse project,
@@ -52,8 +51,8 @@ email address to the account](https://github.com/settings/emails) instead.
 Also add your GitHub account name to your [Eclipse account](https://accounts.eclipse.org/) to enable automated management of access rights for Eclipse project members. 
 You can do this by logging into your Eclipse account, choosing ["Edit Profile"](https://accounts.eclipse.org/user/edit) and add your GitHub account name in the social media links section.
 
-If you are a committer in any of the Eclipse projects, you should receive an email containing an invite to join 
-that project's GitHub organisation within 2 hours. You should accept the invite to maintain committer status in the GitHub organisation.
+If you are a committer in any of the Eclipse projects, you should receive an email containing an invite to join  that project's GitHub organisation within 2 hours. 
+You should accept the invite to maintain committer status in the GitHub organisation.
 
 It is also recommended to [add SSH public keys to your GitHub account](https://github.com/settings/keys).
 
