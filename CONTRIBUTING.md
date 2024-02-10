@@ -176,6 +176,29 @@ Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132
   Again this is a recommendation on the issue title part. Instead of issue title, if needed provide a concise description of changes. 
   Please do not forget to add the issue URL to the commit message. This is used to link with GitHub issue.
 
+## Building the project on commandline
+
+Even though most of the time you can work in the IDE it is sometime beneficial to build on the commandline as this is how we also execute the verification builds, also some test might not run at all in the IDE if they require a veri specific setup,
+also if you want to produce an update site from changes or want to have a local build artifact of your changes you will currently need to do this on the commandline.
+
+### Required tools
+
+We are using [Apache Maven](https://maven.apache.org/index.html) for building the sources, usually it it fine to just use the [latest release](https://maven.apache.org/download.cgi) you can use whatever [install method](https://maven.apache.org/install.html) that is sufficent for your system.
+
+### Running the build
+
+Most project repositories are already setup so that you can run `mvn clean verify` directly, one exception is the [aggregator build](https://github.com/eclipse-platform/eclipse.platform.releng.aggregator/) that builds all projects together and requires [special attention](https://github.com/eclipse-platform/eclipse.platform.releng.aggregator/?tab=readme-ov-file#how-to-build-the-eclipse-sdk).
+
+### Tips and Tricks
+
+- If your **changes seem to be not applied** this is usually a sign that you forget to increment the version of the bundle, or don't have commited (you don't need to push) your changes in wich case the baseline replace might come into effect, you will see a warning in the log like this `[WARNING] <project name>: baseline and build artifacts have same version but different contents`
+- If you just want to **build one specific module**, this is usually possible without special consideration just keep in mind that if the tests are seperated from the module you have changed you need to build both of them or the whole reactor,
+for example you can run the tests and the bundle under test with the command `mvn clean verify -pl :<name of the bundle under test>,:<name of the test bundle>`, one specific test can be run by adding `-Dtest=<full qualified class name of test>`
+- You can perform a **quick run** to check everything compiles with `-DskipTests` in comibination with `-T1C` this can really speed up things, just keep in mind that the tests are not executed.
+- If you want to **make sure you didn't broke the API** you can specify `-Papi-check'
+- If you want to **check the javadoc** (JDT currently [not find all issues](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1858) in the IDE) you can specify `-Pjavadoc` additionally `-DfailOnJavadocErrors=true` will even fail the build, you can even [try to fix them](https://maven.apache.org/plugins/maven-javadoc-plugin/fix-mojo.html) automatically by adding 'javadoc:fix' to your command
+
+
 ## Contact
 
 Contact the project developers via the project's ["dev" mailing list](https://dev.eclipse.org/mailman/listinfo/platform-dev).
