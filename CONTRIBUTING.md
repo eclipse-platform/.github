@@ -66,7 +66,7 @@ You can set up a pre-configured IDE for development of the Eclipse SDK using the
 ## Recommended Workflow
 
 The recommended way for contributions is to create a fork of the main project repository and to create changes only in that fork
-(see [Fork and pull model](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models#fork-and-pull-model) in the GitHub documentation).
+(see [fork and pull model](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models#fork-and-pull-model) as well as [working with fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks) in the GitHub documentation).
 Then you can create a pull request (PR) to have your changes merged from the fork into the main project repository.
 
 The workflow can be separated into two parts:
@@ -113,42 +113,30 @@ Then you have two options:
 
 ### Creating a Pull Request
 
-When you have set up your fork of a repository that you want to contribute change to, and if you have prepared a local clone for it, it you can perform changes, commit them, and propose them via a pull request as follows.
+When you have set up your fork of a repository that you want to contribute to and prepared a local clone for it, you can perform changes, commit them, and propose them via a pull request according to the standard ["pull requests from a fork" workflow](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). In the following, the workflow is sketched with some specific information for the Eclipse platform projects.
 
-1. Create a branch for the changes you want to make. Set up that branch starting from your local `master` branch and set the remote to your forked repository.
+1. **Preparing the PR:** Create a branch in your fork and apply the desired changes to it. Push the branch with the changes to your forked repository (not to the original upstream project repository).
+   - Make multiple commits if necessary as history can be retained, but note that you will usually be asked to combine your changes to a single commit per pull request. So keep changes as small as possible and try to split them up.
 
-2. Change code as needed to fix the issue.
+2. **Creating the PR:** Open the page of the forked repository in your browser, switch to the branch where the fix is developed. Click the _Contribute_ button to start the _Open Pull Request_ workflow.
+   - On the new page verify the target branch is the `master` branch of the main project repository.
+   - Verify that the list of commits contains the changes you intend to merge.
+   - If you are a committer, you can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
 
-3. Commit code changes to the local branch of your fork. Make multiple commits if necessary as history can be retained, but note that you will usually be asked to combine your changes to a single commit per pull request. So keep changes as small as possible and try to split them up.
+3. **Updating the PR:** To update your pull request, you can push more commits to the same branch in your fork. They automatically get added to the pull request (and trigger a new round of builds and reviews). You can also amend your previous commits and force push them to your branch.
+    - You will usually be asked to squash your commits to a single one before a PR will be merged.
+    - Exception: when you bump versions in the Manifest/POM files, you could provide 2 separate commits in the same PR: one with the functional changes (_i.e._ in the code) and one with the version bump (_i.e._ in the Manifest/POM files). This is not a rule but, if necessary, it would help cherry-picking commits when merging your PR.
 
-4. Once the fix is ready, push the branch to your forked repository (not to the original upstream project repository).
+4. **Validating and verifying the PR:** 
+   - Reviewers can review the pull request on the GitHub website or fetch the PR using the _Fetch GitHub PR_ menu entry in the _Git Repositories_ view inside the Eclipse IDE.
+   - Every PR is automatically verified to check that contributors have a [valid Eclipse Contributor Agreement (ECA)](#setting-up-your-eclipse-and-github-account).
 
-5. Open the forked repository page in your browser, switch to the branch where the fix is developed. Click the _Contribute_ button to start the _Open Pull Request_ workflow.
-
-6. On the new page verify the target branch is the correct one to merge your commits. It should be the `master` branch of the main project repository. Also verify that the list of commits contains the changes you intend to merge. If everything is fine, click on _Create pull request_ button at the bottom right.
-
-7. If you are a committer, you can add reviewers if you want certain people to review a change. If you leave this empty, anyone from the project team will review.
-
-8. If you push more commits to the same branch in your fork, they automatically get added to the pull request (and trigger a new round of builds and reviews). You can also amend your previous commits and force push them to your branch.
-    * Note that you will usually be asked to squash your commits to a single one before a PR will be merged (there is one possible exception to this, read further).
-    * Also note that when you bump versions in the Manifest/POM files, you could provide 2 separate commits in the same PR: one with the functional changes (_i.e._ in the code) and one with the version bump (_i.e._ in the Manifest/POM files). This is not a rule but, if necessary, it would help cherry-picking commits when merging your PR.
-
-9. Reviewers can review the pull request on the GitHub website or fetch the PR using the _Fetch GitHub PR_ menu entry in the _Git Repositories_ view inside the Eclipse IDE.
-
-10. Every PR is automatically verified to check that contributors have a valid Eclipse Contributor Agreement (ECA).
-
-11. Once the PR is approved, it can be merged by a committer. Select what fits best given these criteria:
-    * Rebase and Merge (retains all commits separately; useful when developing a feature consisting of multiple independent commits)
-    * Squash and Merge (all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits)
-
-12. After the PR is merged, the source branch used for the PR can be deleted. 
-
-13. Your fork is now _out-of-date_ with the main (upstream) project repository. In case the "origin" remote of your local clone is the forked repository, you should get it back up to date. You can either use the _Sync Fork_ function on GitHub to update the fork and pull the `master` branch to your local clone, or you can update the fork via git locally:
-    * Pull the latest changes from "upstream" (the main project repository) into your local repository. 
-    * Push those changes from your local repository to the "origin" (your fork).
-    If you return to your fork on GitHub, you will see that the master branch is _up-to-date_ with the main project repository.
-
-18. Your fork is now ready for your next contribution. 
+5. **Merging the PR:** Once the PR is approved, it can be merged by a committer
+   - One of two options to merge can be selected, based on what fits best given these criteria:
+      - _Rebase and Merge_: retains all commits separately; useful when developing a feature consisting of multiple independent commits
+      - _Squash and Merge_: all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits
+   - After the PR is merged, the source branch used for the PR (in the fork) can be deleted. 
+   - Your fork is now _out-of-date_ with the main (upstream) project repository. In case the "origin" remote of your local clone is the forked repository, you should get it back up to date. You can either use the _Sync Fork_ function on GitHub to update the fork and pull the `master` branch to your local clone, or pull the latest changes from "upstream" (the main project repository) into your local repository.
 
 ## Commit Message Recommendations
 
