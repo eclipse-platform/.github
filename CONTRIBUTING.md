@@ -129,6 +129,22 @@ When you have set up your fork of a repository that you want to contribute to an
 4. **Validating and verifying the PR:** 
    - Reviewers can review the pull request on the GitHub website or fetch the PR using the _Fetch GitHub PR_ menu entry in the _Git Repositories_ view inside the Eclipse IDE.
    - Every PR is automatically verified to check that contributors have a [valid Eclipse Contributor Agreement (ECA)](#setting-up-your-eclipse-and-github-account).
+   ### What does a valid PR look like? (Checklist)
+   These are the basic criteria that need to be fulfilled for a PR to be considered valid. 
+   
+   **If you are a contributor, consider these points as prerequisites before your PR can be reviewed. Please ask for help if needed, either by making a comment on the PR or via a _GitHub discussion_.**
+
+   - All checks need to pass.
+     - If tests are broken then they should either be fixed or documented (create a new issue or mention an existing one).
+     - The code must compile.
+     - The versions of the affected plugins should be properly bumped.
+     - There should be no new API warnings. If a warning can’t be fixed then suppress it and write a comment explaining why.
+     - If there are other (obscure) errors in the checks, please find them (read the logs) and actively ask what is happening and how to fix them.
+   - The commit text should be well-written (see [Commit Message Recommendations](#commit_message_recommendations)).
+   - If tests were added, they should meet the following criteria:
+      - They should **run**: check the logs and make sure they are being executed.
+      - They should **pass**: do not add broken tests.
+   - If the PR has been reviewed and the reviewer left some comments, address them and clearly document what you did. Either write a proper response like "addressed in commit _XYZ_" or explain why you did what you did. A mere "thumbs up" is not enough.
 
 5. **Merging the PR:** Once the PR is approved, it can be merged by a committer
    - One of two options to merge can be selected, based on what fits best given these criteria:
