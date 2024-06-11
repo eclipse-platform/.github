@@ -188,5 +188,5 @@ for example you can run the tests and the bundle under test with the command `mv
 
 ## Contact
 
-Contact the project developers via the project's ["dev" mailing list](https://dev.eclipse.org/mailman/listinfo/platform-dev).
-
+- For official announcements, use the project's ["dev" mailing list](https://dev.eclipse.org/mailman/listinfo/platform-dev).
+- To ask for help, either use the current issue/PR or start a **GitHub Discussion**
