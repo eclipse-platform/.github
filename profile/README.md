@@ -15,8 +15,7 @@ Overall, Eclipse Platform is an essential set of tools and services for develope
 
 ![workbench](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform.releng.aggregator/master/eclipse.platform.common/bundles/org.eclipse.platform.doc.isv/guide/images/workbench.png)
 
-See also https://projects.eclipse.org/projects/eclipse.platform and https://eclipse.org/eclipse
-
+See also https://projects.eclipse.org/projects/eclipse.platform and https://eclipseide.org/
 ## Community 
 
 The Eclipse Platform is an Eclipse Community project so it obeys governance rules described in the [Eclipse Development Process](https://www.eclipse.org/projects/dev_process/) to guarantee meritocracry, diversity, vendor-neutrality and business-friendliness.
