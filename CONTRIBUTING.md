@@ -179,7 +179,7 @@ Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132
 
 ## Building the project on commandline
 
-Even though most of the time you can work in the IDE it is sometime beneficial to build on the commandline as this is how we also execute the verification builds, also some test might not run at all in the IDE if they require a veri specific setup,
+Even though most of the time you can work in the IDE it is sometime beneficial to build on the commandline as this is how we also execute the verification builds, also some test might not run at all in the IDE if they require a very specific setup,
 also if you want to produce an update site from changes or want to have a local build artifact of your changes you will currently need to do this on the commandline.
 
 ### Required tools
