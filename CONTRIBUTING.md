@@ -177,7 +177,7 @@ Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132
   Again this is a recommendation on the issue title part. Instead of issue title, if needed provide a concise description of changes. 
   Please do not forget to add the issue URL to the commit message. This is used to link with GitHub issue.
 
-## Using Github Copilote Agent
+## Using Github Copilot Agent
 
 Using the [Github Copilote Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) can boots your productivity and giving interesting insights as it allows to fire up a promt and refine the results or build up on the analysis results.
 Due to current limitations using this directly against the base repository has some drawbacks:
