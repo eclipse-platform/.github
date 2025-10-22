@@ -184,7 +184,7 @@ Due to current limitations using this directly against the base repository has s
 
 - Copilot can currently not use a fork, so the branch is created directly on the repository which is against the recommended fork-based workflow.
 - Copilot currently cannot squash  and force push a branch.
-- Github does not support filtering of individual notifications, due to the high cadence and the incremental work mode in some cases this can easily flood the inbox of subscribers of the repository
+- GitHub does not support filtering of individual notifications, due to the high cadence and the incremental work mode in some cases this can easily flood the inbox of subscribers of the repository.
 - If the task is not properly written or the problem is to complex it can result in creating something off the track that needs to be discarded and then iterate again with resulting in some more churn
 
 Because of this we recommend the follwoing workflow
