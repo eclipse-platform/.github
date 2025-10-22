@@ -179,7 +179,7 @@ Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132
 
 ## Using Github Copilot Agent
 
-Using the [Github Copilote Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) can boots your productivity and giving interesting insights as it allows to fire up a promt and refine the results or build up on the analysis results.
+Using the [Github Copilot Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) can boost your productivity and provide interesting insights as it allows to fire up a prompt and refine the results or build up on the analysis results.
 Due to current limitations using this directly against the base repository has some drawbacks:
 
 - Copilote can currently not use a fork, so the branch is created directly on the repository what is against the recommended fork-based workflow
