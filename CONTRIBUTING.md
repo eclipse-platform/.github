@@ -187,7 +187,7 @@ Due to current limitations using this directly against the base repository has s
 - GitHub does not support filtering of individual notifications, due to the high cadence and the incremental work mode in some cases this can easily flood the inbox of subscribers of the repository.
 - If the task is not properly written or the problem is too complex, it can result in creating something off the track that needs to be discarded and then iterate again which results in more churn.
 
-Because of this we recommend the follwoing workflow
+Because of this we recommend the following workflow:
 
 - Let copilote work on your fork, for this one should sync the fork what can be done [through the web UI](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
 - Instead of assign copilote an issue simply reference the issue in the prompt like `Analyze and propose a fix for <link to the original issue>`
