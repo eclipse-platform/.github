@@ -182,7 +182,7 @@ Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132
 Using the [Github Copilot Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) can boost your productivity and provide interesting insights as it allows to fire up a prompt and refine the results or build up on the analysis results.
 Due to current limitations using this directly against the base repository has some drawbacks:
 
-- Copilote can currently not use a fork, so the branch is created directly on the repository what is against the recommended fork-based workflow
+- Copilot can currently not use a fork, so the branch is created directly on the repository which is against the recommended fork-based workflow.
 - Copilot currently cannot squash  and force push a branch.
 - Github does not support filtering of individual notifications, due to the high cadence and the incremental work mode in some cases this can easily flood the inbox of subscribers of the repository
 - If the task is not properly written or the problem is to complex it can result in creating something off the track that needs to be discarded and then iterate again with resulting in some more churn
