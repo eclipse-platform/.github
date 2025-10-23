@@ -192,7 +192,7 @@ Because of this we recommend the following workflow:
 - Let copilot work on your fork.  For this one should sync the fork which can be done though the [web UI](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 - Instead of assigning copilot an an issue, simply reference the issue in the prompt, e.g., `Analyze and propose a fix for <link to the original issue>`.
 - If you are happy with the result or would like to further refine it yourself),  just fetch the branch from your fork, squash all commits, remove unnecessary files and force push the result to a new branch, e.g., usually copilot creates `copilot/fix-for-issue-123` so just push it as `fix-for-issue-123` and then open a PR against the repo as usual. This has the advantage that you can even ask copilot to refine some things later and then just merge the results into your local branch by a simple fetch!
-- Usually you want to leave copilote as the author and you as the commiter, unless you considerably have rewritten the results (e.g. if it was mostly a research task and you did the actual implementation).
+- Usually you want to leave copilot as the author and you as the committer, unless you have significantly rewritten the results, e.g., f it was mostly a research task and you did the actual implementation.
 
 ## Building the project on commandline
 
