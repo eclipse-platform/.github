@@ -151,6 +151,42 @@ When you have set up your fork of a repository that you want to contribute to an
    - After the PR is merged, the source branch used for the PR (in the fork) can be deleted. 
    - Your fork is now _out-of-date_ with the main (upstream) project repository. In case the "origin" remote of your local clone is the forked repository, you should get it back up to date. You can either use the _Sync Fork_ function on GitHub to update the fork and pull the `master` branch to your local clone, or pull the latest changes from "upstream" (the main project repository) into your local repository.
 
+### Using Draft Pull Requests
+
+GitHub allows you to mark a pull request as a [draft](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) to indicate that it is not yet ready for final review or merging. Draft PRs are a valuable tool for collaboration, but they come with certain expectations in the Eclipse Platform community.
+
+#### What Draft Status Means
+
+A draft PR indicates that:
+- The changes are **not yet ready for submission/merging** (e.g., work is still in progress, tests are incomplete, or functionality is not fully working).
+- You are **seeking early feedback** from the community on your approach, design decisions, or implementation.
+  **Important:** Clearly state in the PR description what kind of feedback you are seeking, as draft PRs may be overlooked until marked as ready for review.
+- You may need **help or guidance** to resolve specific issues or to complete the work.
+- You want to **share your progress** with others who might be interested or affected by the changes.
+
+#### What Draft Status Does NOT Mean
+
+A draft PR is **not**:
+- A place to dump incomplete or unclear changes without context.
+  Every PR, including drafts, should have a clear purpose and description.
+- A shield against comments or reviews.
+  Marking a PR as draft does not mean "leave me alone" – it means you welcome early feedback and collaboration.
+- A substitute for local development or working in a private branch.
+  If you're not ready to share your work or discuss it with others, keep it in your local repository or in a branch of your fork without creating a PR.
+
+#### Requirements for Draft PRs
+
+Even when marked as a draft, your PR should meet these basic requirements:
+
+- **Clear intent and description**: Explain what you are trying to achieve, why the changes are being made, and what the current state is.
+- **Understandable changes**: Others should be able to understand what you have done so far and what remains to be done.
+  Consider using a task list in the description to track progress.
+- **Specific questions or requests**: If you need help or feedback on particular aspects, clearly state what you need (e.g., "I'm unsure about the approach in XYZ.java" or "Tests for feature X are still missing").
+- **Reasonable completeness**: While not everything needs to be finished, the PR should represent a coherent chunk of work that others can review and comment on meaningfully.
+
+When your draft PR is ready for final review, convert it to a regular PR using the "Ready for review" button.
+At that point, it should meet all the criteria from the [What does a valid PR look like?](#what-does-a-valid-pr-look-like-checklist) checklist above.
+
 ## Commit Message Recommendations
 
 ```
