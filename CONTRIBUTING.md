@@ -213,6 +213,10 @@ Fixes https://github.com/eclipse-platform/eclipse.platform.debug/issues/132
   Again this is a recommendation on the issue title part. Instead of issue title, if needed provide a concise description of changes. 
   Please do not forget to add the issue URL to the commit message. This is used to link with GitHub issue.
 
+## Using Generative AI for Contributions
+
+Please check the Eclipse Project Handbook for details: [Generative Artificial Intelligence Usage Guidelines for Eclipse Committers](https://www.eclipse.org/projects/handbook/#genai).
+
 ## Using Github Copilot Agent
 
 Using the [Github Copilot Agent](https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent) can boost your productivity and provide interesting insights as it allows to fire up a prompt and refine the results or build up on the analysis results.
