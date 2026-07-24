@@ -2,8 +2,8 @@
 
 ![splash](https://raw.githubusercontent.com/eclipse-platform/eclipse.platform/master/platform/org.eclipse.platform/splash.png)
 <br>
-[Pull requests](https://github.com/pulls?user=eclipse-platform) |
-[Issues](https://github.com/issues?user=eclipse-platform)
+[Pull requests](https://github.com/eclipse-platform/eclipse.platform/pulls) |
+[Issues](https://github.com/eclipse-platform/eclipse.platform/issues)
 
 Eclipse Platform is a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure. It serves as the base framework for the [Eclipse integrated development environment IDE](https://www.eclipse.org/eclipseide/) and many other rich client applications.
 
