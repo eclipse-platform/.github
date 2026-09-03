@@ -5,7 +5,7 @@
 [Pull requests](https://github.com/eclipse-platform/eclipse.platform/pulls) |
 [Issues](https://github.com/eclipse-platform/eclipse.platform/issues)
 
-Eclipse Platform is a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure. It serves as the base framework for the [Eclipse integrated development environment IDE](https://www.eclipse.org/eclipseide/) and many other rich client applications.
+Eclipse Platform is a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure. It serves as the base framework for the [Eclipse integrated development environment IDE](https://eclipseide.org/) and many other rich client applications.
 
 The platform includes a wide range of frameworks and common services that are essential to supporting the use of Eclipse as a component model. These services include a standard workbench user interface model and a portable native widget toolkit, which ensure that the user interface of Eclipse is consistent across different platforms. The project model allows for the management of resources and enables automatic resource delta management for incremental compilers and builders.
 
