@@ -142,6 +142,7 @@ When you have set up your fork of a repository that you want to contribute to an
    - If tests were added, they should meet the following criteria:
       - They should **run**: check the logs and make sure they are being executed.
       - They should **pass**: do not add broken tests.
+   - The PR doesn't introduce unnecessary formatting changes (if the code is not related to the fix, do not format it).
    - If the PR has been reviewed and the reviewer left some comments, address them and clearly document what you did. Either write a proper response like "addressed in commit _XYZ_" or explain why you did what you did. A mere "thumbs up" is not enough.
 
 5. **Merging the PR:** Once the PR is approved, it can be merged by a committer
