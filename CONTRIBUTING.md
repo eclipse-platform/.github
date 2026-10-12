@@ -234,6 +234,26 @@ Because of this we recommend the following workflow:
 - If you are happy with the result or would like to further refine it yourself),  just fetch the branch from your fork, squash all commits, remove unnecessary files and force push the result to a new branch, e.g., usually copilot creates `copilot/fix-for-issue-123` so just push it as `fix-for-issue-123` and then open a PR against the repo as usual. This has the advantage that you can even ask copilot to refine some things later and then just merge the results into your local branch by a simple fetch!
 - Usually you want to leave copilot as the author and you as the committer, unless you have significantly rewritten the results, e.g., f it was mostly a research task and you did the actual implementation.
 
+## Validating your changes and getting AI feedback
+
+This applies to any change, whether written by you or with the help of an AI tool.
+Every push to an upstream PR triggers the verification builds and notifies all subscribers, and the number of concurrent jobs on GitHub-hosted runners is [limited](https://docs.github.com/en/actions/reference/limits#job-concurrency-limits-for-github-hosted-runners), so intermediate states queue up builds for everybody else.
+Actions on standard runners are [free for public repositories](https://docs.github.com/en/billing/concepts/product-billing/github-actions), so the motivation is less noise and less shared CI load, not saving minutes.
+Therefore it is preferable to get feedback before you open the PR against the upstream repository:
+
+1. **Locally (preferred):**
+   Run the [build on the commandline](#building-the-project-on-commandline) and use the local review features of your AI tool, e.g., the [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview) offers the `/review` command to run a code review agent on your local changes.
+   Other tools provide similar features.
+   This might have less coverage than the full build matrix, but it is a fast first feedback loop. If something does not work locally, please let us know.
+2. **On your fork:**
+   Push to your fork to run the GitHub Actions workflows there. This does not run the Jenkins build, but gives a good first confidence.
+   Workflows [don't run in forked repositories by default](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflows-in-forked-repositories), you must enable GitHub Actions in the **Actions** tab of your fork.
+3. **Pull request on your fork:**
+   If you want to use web-integrated tools like [Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review), you can open a PR against your own fork.
+   When you are happy, close it and open a new one against the upstream repository.
+4. **Combine them:**
+   Iterate locally first, then push to your fork, and open the PR against the upstream repository only at the end.
+
 ## Building the project on commandline
 
 Even though most of the time you can work in the IDE it is sometime beneficial to build on the commandline as this is how we also execute the verification builds, also some test might not run at all in the IDE if they require a very specific setup,
