@@ -236,7 +236,12 @@ Because of this we recommend the following workflow:
 
 ## Validating your changes and getting AI feedback
 
-This applies to any change, whether written by you or with the help of an AI tool.
+This applies in particular to AI-generated content, but the AI aspect is not the point.
+What matters is that a pull request is not opened while the content is still effectively a draft:
+it should have been fully reviewed by you as a human author, and you should have high confidence that the work is complete and ready for the review of another human being.
+Content that is still being refined, or is still being reviewed in source form by automated (non-human) reviewers, should not be pushed to the upstream repository.
+
+The goal is to reduce notifications to the repository followers and to avoid thrashing the shared build infrastructure.
 Every push to an upstream PR triggers the verification builds and notifies all subscribers, and the number of concurrent jobs on GitHub-hosted runners is [limited](https://docs.github.com/en/actions/reference/limits#job-concurrency-limits-for-github-hosted-runners), so intermediate states queue up builds for everybody else.
 Actions on standard runners are [free for public repositories](https://docs.github.com/en/billing/concepts/product-billing/github-actions), so the motivation is less noise and less shared CI load, not saving minutes.
 Therefore it is preferable to get feedback before you open the PR against the upstream repository:
