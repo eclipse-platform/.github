@@ -1,35 +1,17 @@
 # Contributing to Eclipse Platform
 
-Thanks for your interest in this project.
-
-## Project Description
-
-Eclipse Platform defines the set of frameworks and common services that supports the usage of Eclipse as a component model, 
-as a Rich Client Platform (RCP) and as a comprehensive tool integration platform. 
-These services and frameworks include a standard workbench
-user interface model and portable native widget toolkit, a project model for
-managing resources, automatic resource delta management for incremental
-compilers and builders, language-independent debug infrastructure, and
-infrastructure for distributed multi-user versioned resource management.
-
-* https://projects.eclipse.org/projects/eclipse.platform
+Thank your for your interest in this project.
 
 ## Developer Resources
 
-Information regarding source code management, builds, coding standards, and
-more.
+The project issues and source code are maintained in [multiple GitHub repositories](https://github.com/orgs/eclipse-platform/repositories):
 
-* https://projects.eclipse.org/projects/eclipse.platform/developer
-
-The project issues and source code are maintained in [multiple GitHub repositories](https://github.com/orgs/eclipse-platform/repositories) like
 * https://github.com/eclipse-platform/eclipse.platform
-* https://github.com/eclipse-platform/eclipse.platform.releng.aggregator
 * https://github.com/eclipse-platform/eclipse.platform.swt
 * https://github.com/eclipse-platform/eclipse.platform.ui
-
+* https://github.com/eclipse-platform/eclipse.platform.releng.aggregator
 
 Be sure to search for existing issues before you create another one. 
-Remember that contributions are always welcome!
 
 ## Setting up Your Eclipse and GitHub Account
 
@@ -138,7 +120,7 @@ When you have set up your fork of a repository that you want to contribute to an
      - The versions of the affected plugins should be properly bumped.
      - There should be no new API warnings. If a warning can’t be fixed then suppress it and write a comment explaining why.
      - If there are other (obscure) errors in the checks, please find them (read the logs) and actively ask what is happening and how to fix them.
-   - The commit text should be well-written (see [Commit Message Recommendations](#commit_message_recommendations)).
+   - The commit text should be well-written (see [Commit Message Recommendations](#commit-message-recommendations)).
    - If tests were added, they should meet the following criteria:
       - They should **run**: check the logs and make sure they are being executed.
       - They should **pass**: do not add broken tests.
