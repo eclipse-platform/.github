@@ -12,7 +12,7 @@ The platform includes a wide range of frameworks and common services that are es
 These services include a standard workbench user interface model and a portable native widget toolkit, which ensure that the user interface of Eclipse is consistent across different platforms.
 The project model allows for the management of resources and enables automatic resource delta management for incremental compilers and builders.
 
-Eclipse Platform also provides a language-independent debug infrastructure that enables developers to debug programs written in different languages.
+Eclipse Platform also provides language-independent debug infrastructure that enables developers to debug programs written in different languages.
 Additionally, the platform includes infrastructure for distributed multi-user versioned resource management, which allows for collaborative development and version control of resources.
 
 Overall, Eclipse Platform is an essential set of tools and services for developers who need a robust and flexible platform for building complex software applications.
@@ -25,34 +25,39 @@ See also https://projects.eclipse.org/projects/eclipse.platform and https://ecli
 
 ## Community
 
-The Eclipse Platform is an Eclipse Community project so it obeys governance rules described in the [Eclipse Development Process](https://www.eclipse.org/projects/dev_process/) to guarantee meritocracry, diversity, vendor-neutrality and business-friendliness.
+The Eclipse Platform is an Eclipse community project.
+It follows the governance rules described in the [Eclipse Development Process](https://www.eclipse.org/projects/dev_process/) to guarantee meritocracy and transparent community oversight.
 
-Please bear in mind that this project is almost entirely developed by volunteers and is not a product you contracted for.
-As a result, the contributors may not be able to look into some support requests.
-As per Eclipse Development Process, the committers are committed to review incoming code contributions though.
-If you do not provide the fix/implementation yourself (or pay someone to do it for you), the bug might never get fixed.
-If it is a serious bug, other people than you might care enough to provide a fix.
-As a consequence of all that, the only sure way to ensure some issue gets fixed or some feature gets implemented is that you contribute it yourself and convince some contributor that the change you submit is in the best interest of the project.
+Please bear in mind that this project is almost entirely developed by volunteers and is not a product for which you contracted.
+As a result, contributors may not be able to look into every support request.
+As per the Eclipse Development Process, committers are committed to reviewing incoming code contributions.
+If you do not provide the fix or implementation yourself (or pay someone to do it for you), the bug might never get fixed.
+If it is a serious bug, other people besides you might care enough to provide a fix.
+As a consequence, the only sure way to ensure an issue gets fixed or a feature gets implemented is to contribute it yourself and convince a contributor that the change you suggest is worthwhile.
 
 As you contribute more and more, you will eventually get nominated as a committer on the project.
 
 ## Reporting Issues
 
-Before reporting an issue, please consider whether the issue still exists or as already been reported:
-* Find existing issues: https://github.com/search?q=org%3Aeclipse-platform&type=issues
-* Test the latest build of Eclipse Platform or SDK: [This page](https://download.eclipse.org/eclipse/downloads/) lists latest builds, and links to downloadable product archives and p2 repositories; and if you're using Maven artifacts, snapshots of Eclipse project are available at https://repo.eclipse.org/content/repositories/eclipse-snapshots/ .
+Before reporting an issue, please consider whether it still exists or has already been reported:
+- Find existing issues: https://github.com/search?q=org%3Aeclipse-platform&type=issues
+- Test the latest build of Eclipse Platform or SDK: 
+  - [https://download.eclipse.org/eclipse/downloads](https://download.eclipse.org/eclipse/downloads/)
+    - Lists the latest builds and links to downloadable product archives and p2 repositories.
+  - [https://repo.eclipse.org/content/repositories/eclipse-snapshots/](https://repo.eclipse.org/content/repositories/eclipse-snapshots/)
+    - Provides Maven artifacts.
 
 The Eclipse Platform project codebase is split into multiple [repositories](https://github.com/orgs/eclipse-platform/repositories) owned by this organization.
 If you face an issue and have a sense of which particular GitHub repository is most related, you can open your issue against that particular repository, e.g.,
-* [New SWT issue](https://github.com/eclipse-platform/eclipse.platform.swt/issues/new)
-* [New Platform issue](https://github.com/eclipse-platform/eclipse.platform/issues/new)
-* [New Platform UI issue](https://github.com/eclipse-platform/eclipse.platform.ui/issues/new)
+- [New SWT issue](https://github.com/eclipse-platform/eclipse.platform.swt/issues/new)
+- [New Platform issue](https://github.com/eclipse-platform/eclipse.platform/issues/new)
+- [New Platform UI issue](https://github.com/eclipse-platform/eclipse.platform.ui/issues/new)
 
-If you are unsure, you can open an [issue](https://github.com/eclipse-platform/.github/issues) against this current repository and the issue will then be moved as best by maintainers.
+If you are unsure, you can open an [issue](https://github.com/eclipse-platform/.github/issues) against this repository, and the issue will then be moved by maintainers.
 
-For errors please provide a stack trace or [minimal reproducer](https://stackoverflow.com/help/minimal-reproducible-example).
+For errors, please provide a stack trace or a [minimal reproducer](https://stackoverflow.com/help/minimal-reproducible-example).
 
-For performance issues attach a sampling snapshot (for example with [visualvm](https://visualvm.github.io/download.html)).
+For performance issues, attach a sampling snapshot (for example with [VisualVM](https://visualvm.github.io/download.html)).
 
 ## Contributing
 
