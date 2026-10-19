@@ -11,7 +11,7 @@ The project issues and source code are maintained in [multiple GitHub repositori
 - https://github.com/eclipse-platform/eclipse.platform.ui
 - https://github.com/eclipse-platform/eclipse.platform.releng.aggregator
 
-Be sure to search for existing issues before you create another one.
+Please search for existing issues before you create a new one.
 
 ## Setting up Your Eclipse and GitHub Account
 
@@ -34,13 +34,14 @@ you can [add your Eclipse email address to the account](https://github.com/setti
 
 Also add your GitHub account name to your [Eclipse account](https://accounts.eclipse.org/) to enable automated management of access rights for Eclipse project members.
 You can do this by logging into your Eclipse account,
-choosing ["Edit Profile"](https://accounts.eclipse.org/user/edit) and add your GitHub account name in the social media links section.
+choosing ["Edit Profile"](https://accounts.eclipse.org/user/edit),
+and add your GitHub account name in the social media links section.
 
 If you are a committer in any of the Eclipse projects,
 you should receive an email containing an invite to join that project's GitHub organisation within 2 hours.
 You should accept the invite to maintain committer status in the GitHub organisation.
 
-It is also recommended to [add SSH public keys to your GitHub account](https://github.com/settings/keys).
+It is recommended to [add SSH public keys to your GitHub account](https://github.com/settings/keys).
 </details>
 
 ## Creating an Eclipse Development Environment
@@ -56,6 +57,8 @@ see [fork and pull model](https://docs.github.com/en/pull-requests/collaborating
 as well as [working with forks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks) in the GitHub documentation.
 
 ### Creating and Managing a Fork
+
+You will need a fork for each repository to which you wish to contribute.
 
 <details>
 <summary>Details&hellip;</summary>
@@ -117,11 +120,13 @@ Then you have two options:
 
 ### Creating a Pull Request
 
+You will need to create a pull request in order to contribute.
+
 <details>
 <summary>Details&hellip;</summary>
 
-When you have set up your fork of a repository that you want to contribute to and prepared a local clone for it,
-you can perform changes,
+When you have set up a fork of a repository to which you wish contribute and prepared a local clone for it,
+you can make changes,
 commit them,
 and propose them via a pull request according to the standard ["pull requests from a fork" workflow](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 In the following,
@@ -149,24 +154,24 @@ the workflow is sketched with some specific information for the Eclipse platform
    You can also amend your previous commits and force push them to your branch.
     - You will usually be asked to squash your commits to a single one before a PR will be merged.
     - Exception: when you bump versions in the Manifest/POM files,
-      you could provide 2 separate commits in the same PR: one with the functional changes (_i.e._ in the code) and one with the version bump (_i.e._ in the Manifest/POM files).
+      you could provide 2 separate commits in the same PR:
+      one with the functional changes (i.e., in the code) and one with the version bump (i.e., in the Manifest/POM files).
       This is not a rule but,
       if necessary,
-      it would help cherry-picking commits when merging your PR.
+      it would help cherry-picking commits when merging your PR,
+      and avoids problems if there is ever a need to revert the code changes.
 
 4. **Validating and verifying the PR:**
    - Reviewers can review the pull request on the GitHub website or fetch the PR using the _Fetch GitHub PR_ menu entry in the _Git Repositories_ view inside the Eclipse IDE.
    - Every PR is automatically verified to check that contributors have a [valid Eclipse Contributor Agreement (ECA)](#setting-up-your-eclipse-and-github-account).
    - What does a valid PR look like? (Checklist)
      These are the basic criteria that need to be fulfilled for a PR to be considered valid.
-     **If you are a contributor, consider these points as prerequisites before your PR can be reviewed.**
-     **Please ask for help if needed, either by making a comment on the PR or via a _GitHub discussion_.**
      - All checks need to pass.
-       - If tests are broken then they should either be fixed or documented (create a new issue or mention an existing one).
+       - If tests are broken, they should either be fixed or documented, i.e., create a new issue or reference an existing issue.
        - The code must compile.
-       - The versions of the affected plugins should be properly bumped.
+       - The versions of the affected bundles should be properly bumped.
        - There should be no new API warnings.
-         If a warning can’t be fixed then suppress it and write a comment explaining why.
+         If a warning can’t be fixed, suppress it and write a comment explaining why.
        - If there are other (obscure) errors in the checks,
          please find them (read the logs) and actively ask what is happening and how to fix them.
      - The commit text should be well-written (see [Commit Message Recommendations](#commit-message-recommendations)).
@@ -176,21 +181,21 @@ the workflow is sketched with some specific information for the Eclipse platform
         - They should **pass**: do not add broken tests.
      - If the PR has been reviewed and the reviewer left some comments,
        address them and clearly document what you did.
-       If you have simply done the obvious thing as recommended by the reviewer,
-       a "thumbs up" emoji sufficient, and helps avoid unnecessary notifications.
+       If you have simply done the obvious thing recommended by the reviewer,
+       a "thumbs up" emoji is sufficient and helps avoid unnecessary notifications.
        Please resolve each review comment when it has been addressed by a follow up commit.
 
 5. **Merging the PR:** Once the PR is approved,
    it can be merged by a committer.
    - One of two options can be selected,
      based on what fits best given these criteria:
-      - _Rebase and Merge_: retains all commits separately; useful when developing a feature consisting of multiple independent commits
-      - _Squash and Merge_: all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits
+      - _Rebase and Merge_: retains all commits separately; useful when developing a feature consisting of multiple independent commits.
+      - _Squash and Merge_: all commits in the PR get squashed into a single commit; useful to avoid separate "fix comments" commits.
    - After the PR is merged,
-     the source branch used for the PR (in the fork) can be deleted.
+     the source branch used for the PR in the fork can be deleted.
    - Your fork is now _out-of-date_ with the main (upstream) project repository.
      In case the "origin" remote of your local clone is the forked repository,
-     you should get it back up to date.
+     you should get it back in sync.
      You can either use the _Sync Fork_ function on GitHub to update the fork and pull the `master` branch to your local clone,
      or pull the latest changes from "upstream" (the main project repository) into your local repository.
 </details>
@@ -198,9 +203,7 @@ the workflow is sketched with some specific information for the Eclipse platform
 ### Using Draft Pull Requests
 
 GitHub allows you to mark a pull request as a [draft](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests).
-Draft PRs are a valuable tool for collaboration,
-but they come with certain expectations in the Eclipse Platform community.
-
+Please describe the purpose and current state of the contribution.
 
 <details>
 <summary>What to do&hellip;</summary>
@@ -301,18 +304,19 @@ Using the [GitHub Copilot Agent](https://docs.github.com/en/copilot/concepts/age
 <summary>Details&hellip;</summary>
 Due to current limitations, using this directly against the base repository has some drawbacks:
 
-- Copilot can currently not use a fork,
+- Copilot cannot currently use a fork,
   so the branch is created directly on the repository which is against the recommended fork-based workflow.
 - Copilot currently cannot squash and force push a branch.
 - GitHub does not support filtering of individual notifications,
-  due to the high cadence and the incremental work mode in some cases this can easily flood the inbox of subscribers of the repository.
+  due to the high cadence and the incremental work mode in some cases,
+  this can easily flood the inbox of subscribers of the repository.
 - If the task is not properly written or the problem is too complex,
   it can result in creating something off the track that needs to be discarded and then iterate again which results in more churn.
 
 Because of this we recommend the following workflow:
 
 - Let Copilot work on your fork.
-  For this one should sync the fork which can be done through the [web UI](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
+  For this you should sync the fork which can be done through the [web UI](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 - Instead of assigning Copilot an issue,
   simply reference the issue in the prompt,
   e.g., `Analyze and propose a fix for <link to the original issue>`.
@@ -321,7 +325,7 @@ Because of this we recommend the following workflow:
   squash all commits,
   remove unnecessary files and force push the result to a new branch,
   e.g., usually Copilot creates `copilot/fix-for-issue-123` so just push it as `fix-for-issue-123` and then open a PR against the repo as usual.
-  This has the advantage that you can even ask Copilot to refine some things later and then just merge the results into your local branch by a simple fetch!
+  This has the advantage that you can even ask Copilot to refine some things later and then just merge the results into your local branch by a simple fetch.
 - Usually you want to leave Copilot as the author and you as the committer,
   unless you have significantly rewritten the results,
   e.g., if it was mostly a research task and you did the actual implementation.
@@ -330,45 +334,44 @@ Because of this we recommend the following workflow:
 ## Validating Changes and AI Feedback
 
 Please respect the time and attention of the humans involved in the review process,
-and please reduce the load on the shared build infrastructure that verifies each commit. 
+and reduce the load on the shared build infrastructure that verifies each commit.
+Use your fork for drafting a pull request and for initial copilot reviews.
+Create a pull request only after you have personally verified the quality.
 
 <details>
 <summary>Details&hellip;</summary>
-This applies in particular to AI-generated content,
-but the AI aspect is not the point.
-What matters is that a pull request is not opened while the content is still effectively a draft:
-it should have been fully reviewed by you as a human author,
+Typically a pull request should not be opened while the content is effectively a draft.
+It should be fully reviewed by you as a human author,
 and you should have high confidence that the work is complete and ready for the review of another human being.
 Content that is still being refined,
 or is still being reviewed in source form by automated (non-human) reviewers,
 should not be pushed to the upstream repository.
 
 The goal is to reduce notifications to the repository followers and to avoid thrashing the shared build infrastructure.
-Every push to an upstream PR triggers the verification builds and notifies all subscribers,
-and the number of concurrent jobs on GitHub-hosted runners is [limited](https://docs.github.com/en/actions/reference/limits#job-concurrency-limits-for-github-hosted-runners),
-so intermediate states queue up builds for everybody else.
+Every push to an upstream PR triggers the verification builds and notifies all subscribers.
+The number of concurrent jobs on GitHub-hosted runners is [limited](https://docs.github.com/en/actions/reference/limits#job-concurrency-limits-for-github-hosted-runners),
+so intermediate states queue up builds for everyone.
 Actions on standard runners are [free for public repositories](https://docs.github.com/en/billing/concepts/product-billing/github-actions),
-so the motivation is less noise and less shared CI load,
-not saving minutes.
-Therefore it is preferable to get feedback before you open the PR against the upstream repository:
+so the motivation is less noise and particularly less shared ci.eclipse.org load.
+Therefore it is generally preferable to get AI feedback before you open the PR against the upstream repository:
 
 1. **Locally (preferred):**
    Run the [build on the command line](#command-line-builds) and use the local review features of your AI tool,
    e.g., the [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/overview) offers the `/review` command to run a code review agent on your local changes.
    Other tools provide similar features.
    This might have less coverage than the full build matrix,
-   but it is a fast first feedback loop.
+   but it is a quick feedback loop.
    If something does not work locally,
    please let us know.
 2. **On your fork:**
    Push to your fork to run the GitHub Actions workflows there.
-   This does not run the Jenkins build but gives good initial confidence.
+   This does not run the Jenkins build on ci.eclipse.rog but gives good initial confidence.
    Workflows [don't run in forked repositories by default](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflows-in-forked-repositories),
    you must enable GitHub Actions in the **Actions** tab of your fork.
 3. **Pull request on your fork:**
    If you want to use web-integrated tools like [Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review),
    you can open a PR against your own fork.
-   When you are happy,
+   When you are satisfied,
    close it and open a new one against the upstream repository.
 4. **Combine them:**
    Iterate locally first,
@@ -420,4 +423,4 @@ One exception is the [aggregator build](https://github.com/eclipse-platform/ecli
 - For official announcements,
   use the project's ["dev" mailing list](https://dev.eclipse.org/mailman/listinfo/platform-dev).
 - To ask for help,
-  either use the current issue/PR or start a **GitHub Discussion**
+  either use the current issue/PR or start a GitHub Discussion.
