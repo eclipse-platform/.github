@@ -365,7 +365,7 @@ Therefore it is generally preferable to get AI feedback before you open the PR a
    please let us know.
 2. **On your fork:**
    Push to your fork to run the GitHub Actions workflows there.
-   This does not run the Jenkins build on ci.eclipse.rog but gives good initial confidence.
+   This does not run the Jenkins build on ci.eclipse.org but gives good initial confidence.
    Workflows [don't run in forked repositories by default](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflows-in-forked-repositories),
    you must enable GitHub Actions in the **Actions** tab of your fork.
 3. **Pull request on your fork:**
