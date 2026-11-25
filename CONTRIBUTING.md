@@ -335,8 +335,11 @@ Because of this we recommend the following workflow:
 
 Please respect the time and attention of the humans involved in the review process,
 and reduce the load on the shared build infrastructure that verifies each commit.
-Use your fork for drafting a pull request and for initial copilot reviews.
-Create a pull request only after you have personally verified the quality.
+- Use your fork for drafting a pull request and for initial copilot reviews.
+- Create a pull request only after you have personally verified the quality.
+- Limit the number of concurrently open pull requests to ten.
+- Do not create a pull request that cannot reasonably be expected to complete quickly.
+- Do not create a pull request during the freeze period that will need rebasing when the new stream opens.
 
 <details>
 <summary>Details&hellip;</summary>
